@@ -1,4 +1,4 @@
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+ *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
       --blue:       #0068B5;
@@ -115,13 +115,15 @@
     }
 
     .hero h1 {
-      font-family: 'Orbitron', sans-serif;
-      font-size: clamp(2rem, 5.5vw, 4.2rem);
-      font-weight: 900;
-      line-height: 1.1;
-      max-width: 820px;
-      text-shadow: 0 0 40px rgba(0,194,224,0.3);
-    }
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-shadow:
+    0 0 10px rgba(0, 194, 224, 0.8),
+    0 0 20px rgba(0, 194, 224, 0.5),
+    0 0 40px rgba(0, 194, 224, 0.3);
+}
 
     .title-word {
       display: inline-block;
@@ -329,6 +331,7 @@
     }
 
     .section-head h2 {
+      
       font-family: 'Orbitron', sans-serif;
       font-size: clamp(1.5rem, 3.5vw, 2.6rem);
       font-weight: 700;
@@ -784,3 +787,18 @@
       .ms-card { border-radius: 14px; }
       .code-float { display: none; }
     }
+.hero h1,
+.title-word {
+  font-family: 'Google Sans Code', monospace !important;
+}
+.hero h1 {
+  font-size: 4rem;
+}
+* {
+  font-family: 'Google Sans Code', monospace !important;
+}
+/* All section headings */
+h2,
+h3 {
+  color: #ff9ecf;
+}
